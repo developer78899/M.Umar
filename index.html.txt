@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pak Watan Public High School Kasur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #005b4f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #024c41;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    .fee-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    .fee-section h2 {
+      color: #005b4f;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .submit-btn {
+      background: #005b4f;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pak Watan Public High School Kasur</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Admissions</a>
+    <a href="#">Fee Payment</a>
+    <a href="#">Contact</a>
+  </nav>
+  <main>
+    <section class="fee-section">
+      <h2>Online Fee Payment</h2>
+      <p>Send your fee via JazzCash to <strong>0300-1234567</strong> and fill the form below.</p>
+      <form>
+        <label for="studentName">Student's Name</label>
+        <input type="text" id="studentName" required />
+
+        <label for="fatherName">Father's Name</label>
+        <input type="text" id="fatherName" required />
+
+        <label for="class">Class</label>
+        <input type="text" id="class" required />
+
+        <label for="section">Section</label>
+        <input type="text" id="section" required />
+
+        <label for="month">Fee Month</label>
+        <input type="text" id="month" required />
+
+        <label for="amount">Paid Amount</label>
+        <input type="number" id="amount" required />
+
+        <label for="jazzcash">JazzCash Mobile No</label>
+        <input type="text" id="jazzcash" required />
+
+        <label for="txnId">Transaction ID</label>
+        <input type="text" id="txnId" required />
+
+        <label for="receipt">Upload Screenshot/Receipt</label>
+        <input type="file" id="receipt" accept="image/*,application/pdf" required />
+
+        <label for="captcha">What is 3 + 5?</label>
+        <input type="text" id="captcha" required />
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
